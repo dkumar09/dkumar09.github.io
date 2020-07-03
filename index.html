@@ -21,10 +21,22 @@
     background-color: rgba(255, 255, 255, 0.788);
     border:1px solid black;
   }
+  .border{
+    border:1px solid black;
+  }
+  .wrapper{background: url('./asset/image/fixed_bg1.png') no-repeat   center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .mtop-auto{
+    margin-top: 10px;
+  }
 </style>
 </head>
 
-<body style="background-image: url(./asset/image/fixed_bg1.png);background-repeat: no-repeat;background-attachment: fixed;background-size: 100%;">
+<body class="wrapper">
   <nav class="navbar navbar-expand-sm" style="background-color: #292826;">
     <a class="navbar-brand">
       <img src="./asset/image/lambda_logo.svg" width="50" height="50">
@@ -35,8 +47,19 @@
       <li class="nav-item orangemr-auto"><a class="nav-link">Contact</a></li>
     </ul>
   </nav>
-  <div class="container white-bg">
-    hello
+  <div class="container white-bg mtop-auto">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card border" style="width:18 rem;">
+          <img src="asset/image/maze.png" class="card-img-top img-responsive">
+          <div class="card-body">
+            <p class="card-text" style="text-align: center;">
+              <a href="./maze/">Maze Generator Demo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
